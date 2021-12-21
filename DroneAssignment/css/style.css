@@ -1,0 +1,35 @@
+body{
+    background-image: url('../images/ground (2).jpg');
+    background-size: cover;
+}
+#surface{
+    background-image: url('../images/images.jpg');
+    background-size: contain;
+    height: 400px;
+    width: 400px;
+    box-shadow: 5px 6px 10px;
+    margin: 60px auto 20px;
+    position: relative;
+}
+.buttons{
+    text-align: center;
+}
+.buttons button{
+    margin-bottom: 8px;
+}
+#drone{
+    height: 80px;
+    width: 80px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+}
+
+#placeDialogue{
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    top: 120px;
+    left: 100px;
+}

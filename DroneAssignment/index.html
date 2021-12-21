@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div id="surface">
+        <img id="drone" src="drone.svg">
+        <form id="placeDialogue">
+            <span id="direction">Select Direction</span>
+            <select id="directionOptions">
+              <option value="north">North</Option>
+              <option value="east">East</Option>
+              <option value="south">South</Option>
+              <option value="west">West</Option>
+            </select><br><br>
+            <button id="okButton" type="button" onclick = "OkClickHandler()" id="okButton">OK</button>
+            <button id="cancelButton" type="button" onclick = "CancelClickHandler()" id="okButton">Cancel</button>
+        </form>
+        
+    </div>
+    <div class="buttons">
+        
+        <button disabled id="left">Left</button>
+        <button disabled id="move">Move</button>
+        <button disabled id="right">Right</button><br>
+        <button disabled id="place" onclick = "OkClickHandler()">Place</button>
+        <button disabled id="report" onclick = "Report()">Report</button>
+        
+    </div>
+    <script src="script/drone.js"></script>
+</body>
+</html>
